@@ -13,10 +13,30 @@ const page = () => {
   const [posts, setPosts] = useState([]);
 
   const handleEdit = (post) => {
-    router.push(`/update-blog?id=${post._id}`)
+    router.push(`/update-blog?id=${post._id}`);
   };
 
-  const handleDelete = async (post) => {};
+  const handleDelete = async (post) => {
+    const hasConfirmed = confirm(
+      "are you sure you want to delete this blog????"
+    );
+
+    if (hasConfirmed) {
+      try {
+        await fetch(`/api/blog/${post._id.toString()}`, {
+          method: "DELETE",
+        });
+
+        const filteredPosts = posts.filter((myPost) => {
+          myPost._id !== post._id;
+        });
+
+        setPosts(filteredPosts);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+  };
 
   useEffect(() => {
     const fetchPosts = async () => {
