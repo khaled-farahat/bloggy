@@ -32,7 +32,6 @@ Bloggy is a simple and user-friendly blog app that enables users to create and m
 - Create Blogs: Users can create new blogs with a title, content, and tags.
 - Edit Blogs: Users can edit the content and tags of their existing blogs.
 - Delete Blogs: Users have the ability to delete their own blogs when needed.
-- Rich Text Editing: The blog content can be formatted using a rich text editor for better presentation.
 - Tagging: Users can add tags to their blogs for easy categorization.
 - Responsive Design: The application is built with responsiveness in mind for a seamless experience across devices.
 
