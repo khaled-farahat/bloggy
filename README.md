@@ -64,6 +64,9 @@ The Bloggy project utilizes the following technologies:
 - [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for rapidly building custom user interfaces.
 - [Next.js](https://nextjs.org/): A popular React framework for building server-side rendered (SSR) and using nextjs 13 and latest features app route
 - [NextAuth.js](https://next-auth.js.org/): An authentication library for Next.js applications that supports various providers, including Google.
+- [MongoDB](https://www.mongodb.com/): A NoSQL database used for storing blog data.
+- [Mongoose](https://mongoosejs.com/): An elegant MongoDB object modeling for Node.js, providing a straight-forward, schema-based solution for interacting with the database.
+
 
 ## Getting Started
 
@@ -87,6 +90,8 @@ npm install
 ## Configuration
 
 Before running the application, you need to configure the authentication provider for NextAuth.js to enable Google login. Refer to the NextAuth.js documentation for details on setting up Google OAuth credentials.
+
+And you need to adjust the database connection settings in the appropriate configuration file to connect to your MongoDB database.
 
 ## Usage
 
