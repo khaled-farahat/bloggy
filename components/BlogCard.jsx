@@ -57,7 +57,7 @@ const BlogCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
       <p
         className="font-inter text-sm blue_gradient cursor-pointer"
         onClick={() => {
-          handleTagClick && handleTagClick;
+          handleTagClick && handleTagClick(post.tag);
         }}
       >
         {post.tag}
