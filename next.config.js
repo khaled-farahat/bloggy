@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: "/bloggy",
+  output: "exports",
   experimental:{
     serverComponentsExternalPackages: ["mongoose"],
   },
